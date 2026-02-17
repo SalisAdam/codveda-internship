@@ -1,1 +1,0 @@
-#codveda-internship setup
