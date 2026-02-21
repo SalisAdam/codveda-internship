@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Codveda Task 3 - User Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Codveda Task 3 - User Management</h1>
+
+        <div class="form-container">
+            <input type="hidden" id="userId">
+            <input type="text" id="username" placeholder="Enter Users' name">
+            <button onclick="saveUser()" id="saveBtn">Add User</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

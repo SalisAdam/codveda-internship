@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #75e3e7, #269fa3);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+#saveBtn {
+    background-color: #4e73df;
+}
+
+.edit-btn {
+    background-color: #f6c23e;
+}
+
+.delete-btn {
+    background-color: #e74a3b;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #4e73df;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(-20px);
+    z-index: 999;
+}
+
+#toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
